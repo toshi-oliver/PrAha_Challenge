@@ -1,7 +1,7 @@
 import React from 'react';
 import Board from './Board';
 
-export default {
+let component = {
   component: Board,
   title: 'Board',
   argTypes: { onClick: { action: 'onClick' } },
@@ -23,3 +23,5 @@ export const allTriangle = Template.bind({});
 allTriangle.args = {
   squares: ['△', '△', '△', '△', '△', '△', '△', '△', '△'],
 };
+
+export default component;

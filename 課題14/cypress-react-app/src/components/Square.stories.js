@@ -1,7 +1,7 @@
 import React from 'react';
 import Square from './Square';
 
-export default {
+let component = {
   component: Square,
   title: 'Square',
   argTypes: { onClick: { action: 'onClick' } },
@@ -18,3 +18,5 @@ export const Cross = Template.bind({});
 Cross.args = {
   value: 'X',
 };
+
+export default component
