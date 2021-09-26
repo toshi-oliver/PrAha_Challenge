@@ -1,7 +1,5 @@
 import "../../styles.css";
 import styled from "styled-components";
-import { Header } from "../atoms/layout/Header"
-import { Footer } from "../atoms/layout/Footer"
 import { Post } from "../organisms/Post";
 import { Author } from "../organisms/Author";
 import { Categories } from "../organisms/Categories";
@@ -9,22 +7,18 @@ import { RecentPost } from "../organisms/RecentPost";
 
 export const Top = () => {
   return (
-    <>
-      <Header />
-        <SWrapper>
-          <SContainer>
-            <SLeftArea>
-              <Post />
-            </SLeftArea>
-            <SRightArea>
-              <Author />
-              <Categories />
-              <RecentPost />
-            </SRightArea>
-          </SContainer>
-        </SWrapper>
-      <Footer />
-    </>
+    <SWrapper>
+      <SContainer>
+        <SLeftArea>
+          <Post />
+        </SLeftArea>
+        <SRightArea>
+          <Author />
+          <Categories />
+          <RecentPost />
+        </SRightArea>
+      </SContainer>
+    </SWrapper>
   );
 };
 

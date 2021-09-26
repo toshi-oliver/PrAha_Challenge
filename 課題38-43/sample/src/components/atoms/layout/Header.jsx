@@ -12,15 +12,6 @@ export const Header = () => {
           <SElemnt href="http://#####">Blog</SElemnt>
           <SElemnt href="http://#####">About us</SElemnt>
         </SLink>
-        <div class="content">
-          <section>
-            <div class="btn-trigger" id="btn01">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </section>
-        </div>
       </SContainer>
     </SHeader>
   );
