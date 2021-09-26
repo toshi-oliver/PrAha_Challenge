@@ -37,15 +37,24 @@ const SContainer = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1280px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const SLeftArea = styled.div`
   padding-top: 40px;
   width: 65%;
   flex-direction: column;
+  @media screen and (max-width: 480px) {
+    width: 375px;
+  }
 `;
 
 const SRightArea = styled.div`
   padding-top: 40px;
   width: 30%;
+  @media screen and (max-width: 480px) {
+    display: none
+  }
 `;

@@ -12,6 +12,15 @@ export const Header = () => {
           <SElemnt href="http://#####">Blog</SElemnt>
           <SElemnt href="http://#####">About us</SElemnt>
         </SLink>
+        <div class="content">
+          <section>
+            <div class="btn-trigger" id="btn01">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </section>
+        </div>
       </SContainer>
     </SHeader>
   );
@@ -40,6 +49,9 @@ const SLogo = styled.div`
 
 const SLink = styled.div`
   display: flex;
+  @media screen and (max-width: 480px) {
+    display: none
+  }
 `;
 
 const SElemnt = styled.a`
